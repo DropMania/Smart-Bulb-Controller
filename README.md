@@ -1,4 +1,4 @@
-#Smart Bulb Controller
+# Smart Bulb Controller
 
 ### fork of the electron-quick-start repo
 
