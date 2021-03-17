@@ -4,7 +4,13 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-win": "electron-packager . BulbController --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"BulbController\""    
+  },
+  "build": {
+    "win": {
+      "icon": "icon.ico"
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -18,5 +24,8 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^11.2.3"
+  },
+  "dependencies": {
+    "magic-hue-controller": "^1.0.1"
   }
 }
