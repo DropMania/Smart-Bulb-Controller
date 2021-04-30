@@ -2,7 +2,7 @@ module.exports = {
     WIN_HEIGHT: 500,
     WIN_WIDTH: 520,
     BLOCK_SIZE: 150,
-    BULB_IP: '192.168.2.108',
+    BULBS: ['192.168.2.108', '192.168.2.112'],
     COLOR_MAP: {
         RED: '255,0,0',
         BLUE: '0,0,255',
